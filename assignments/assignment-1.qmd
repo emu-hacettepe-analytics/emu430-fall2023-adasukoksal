@@ -16,6 +16,9 @@ This is how we perform using the r programming language.
 
 In the Python programming language, performed as follows.
 
+``` python
+```{python} print("Hello Python!") ```
+```
 
 My first assignment has two parts.
 
