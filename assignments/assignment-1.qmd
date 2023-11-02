@@ -7,7 +7,8 @@ title: "Assignment 1"
 Although both R and Python are programming languages, they have differences and similarities. One of the common points of the two programming languages is that the print command is used in the same way in both. The print command can be used to write text in both R and Python. But when it comes to processing, R remains much simpler and more understandable than Python. Because we can write the operations directly, but in order to perform operations in Python, we first need to assign the numbers. In this article, I will tell you about the differences between these two languages. I will exemplify the differences with code writing. We can list the 3 differences between R and Python as follows:
 
 1.  variable assignment
-2.  conditional statements 
+2.  conditional statements
+
 3.loops
 
 Talking about the first difference, variable assignments, R and Python use different characters for some operations. In my opinion, R uses an easier and more understandable language than Python in this regard. In R, a value is assigned to a variable using the '<-' operator. In Python, the assignment is done using the = operator. Also in R we can add two numbers by only using '+' although, in Python first we need to assign this numbers to a character.
