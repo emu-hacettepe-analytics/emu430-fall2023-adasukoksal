@@ -39,7 +39,7 @@
     "href": "assignments/assignment-1.html",
     "title": "Assignment 1",
     "section": "",
-    "text": "Although both R and Python are programming languages, they have differences and similarities. In this article, I will tell you about the differences between these two languages. I will exemplify the differences with code writing.\nIn the Python programming language, performed as follows.\nMy first assignment has two parts.\n\n\nThis is how we perform using the r programming language.\n\n1 + 1\n\n[1] 2\n\nprint(\"Hello World\")\n\n[1] \"Hello World\"\n\nmin(1, 0.75, 1.25) \n\n[1] 0.75"
+    "text": "Although both R and Python are programming languages, they have differences and similarities. In this article, I will tell you about the differences between these two languages. I will exemplify the differences with code writing. One of the common points of the two programming languages ​​is that the print command is used in the same way in both. The print command can be used to write text in both R and Python. But when it comes to processing, R remains much simpler and more understandable than Python. Because we can write the operations directly, but in order to perform operations in Python, we first need to assign the numbers.\n\n\nThis is how we perform using the r programming language.\n\n1 + 1\n\n[1] 2\n\nprint(\"Hello World\")\n\n[1] \"Hello World\"\n\nmin(1, 0.75, 1.25) \n\n[1] 0.75"
   },
   {
     "objectID": "assignments/assignment-1.html#a-r-programing",

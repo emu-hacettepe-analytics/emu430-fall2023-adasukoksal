@@ -5,13 +5,7 @@ title: "Assignment 1"
 # Differences between R and Phyton
       
 Although both R and Python are programming languages, they have differences and similarities. In this article, I will tell you about the differences between these two languages. I will exemplify the differences with code writing.
-
-
-
-
-In the Python programming language, performed as follows.
-
-My first assignment has two parts.
+One of the common points of the two programming languages ​​is that the print command is used in the same way in both. The print command can be used to write text in both R and Python. But when it comes to processing, R remains much simpler and more understandable than Python. Because we can write the operations directly, but in order to perform operations in Python, we first need to assign the numbers.
 
 ## (a) R Programing
 
