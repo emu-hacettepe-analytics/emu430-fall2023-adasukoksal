@@ -16,14 +16,6 @@ This is how we perform using the r programming language.
 
 In the Python programming language, performed as follows.
 
-```{python}
-x = input("Type a number: ")
-y = input("Type another number: ")
-
-sum = int(x) + int(y)
-
-print("The sum is: ", sum)
-```
 
 My first assignment has two parts.
 
