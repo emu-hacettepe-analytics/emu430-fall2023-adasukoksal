@@ -49,6 +49,8 @@ for (i in 1:5) {
 
 ## (b) Python
 
+Now it's time to look at Python coding examples.
+
 For the first difference, variable assignments:
 
 ```{python}
