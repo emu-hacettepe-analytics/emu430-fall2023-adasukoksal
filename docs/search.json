@@ -39,7 +39,7 @@
     "href": "assignments/assignment-1.html",
     "title": "Assignment 1",
     "section": "",
-    "text": "Although both R and Python are programming languages, they have differences and similarities. In this article, I will tell you about the differences between these two languages. I will exemplify the differences with code writing.\nThis is how we perform using the r programming language.\n\n1 + 1\n\n[1] 2\n\n\nIn the Python programming language, performed as follows.\nMy first assignment has two parts."
+    "text": "Although both R and Python are programming languages, they have differences and similarities. In this article, I will tell you about the differences between these two languages. I will exemplify the differences with code writing.\nThis is how we perform using the r programming language.\n\n1 + 1\n\n[1] 2\n\nprint(\"Hello World\")\n\n[1] \"Hello World\"\n\nmin(1, 0.75, 1.25) \n\n[1] 0.75\n\n\nIn the Python programming language, performed as follows.\nMy first assignment has two parts."
   },
   {
     "objectID": "assignments.html",

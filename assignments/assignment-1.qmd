@@ -12,6 +12,10 @@ This is how we perform using the r programming language.
 ```{r}
 
 1 + 1
+
+print("Hello World")
+min(1, 0.75, 1.25) 
+
 ```
 
 In the Python programming language, performed as follows.
