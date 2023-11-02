@@ -6,9 +6,18 @@ title: "Assignment 1"
 
 ```         
 Although both R and Python are programming languages, they have differences and similarities. In this article, I will tell you about the differences between these two languages. I will exemplify the differences with code writing.
-This is how we perform using the r programming language.
+
 ```
 
+
+
+In the Python programming language, performed as follows.
+
+My first assignment has two parts.
+
+## (a) R Programing
+
+This is how we perform using the r programming language.
 ```{r}
 
 1 + 1
@@ -17,11 +26,5 @@ print("Hello World")
 min(1, 0.75, 1.25) 
 
 ```
-
-In the Python programming language, performed as follows.
-
-My first assignment has two parts.
-
-## (a) R Programing
 
 ## (b) Python
