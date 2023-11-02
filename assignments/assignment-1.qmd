@@ -20,9 +20,10 @@ min(1, 0.75, 1.25)
 ```
 
 ## (b) Python
-
-```{r, engine='python'}
-# Python kodu buraya gelecek
+```{python}
 x = 5
 y = 3
 print(x + y)
+```
+
+
