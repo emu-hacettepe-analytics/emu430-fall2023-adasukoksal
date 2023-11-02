@@ -5,11 +5,25 @@ title: "Assignment 1"
 # Differences between R and Phyton
 
 ```         
-This is how we perform addition operations using the r programming language.
+This is how we perform using the r programming language.
 ```
 
 ```{r}
+
 1 + 1
+```
+
+In the Python programming language, performed as follows.
+
+```{python}
+x = input("Type a number: ")
+y = input("Type another number: ")
+
+sum = int(x) + int(y)
+
+print("The sum is: ", sum)
+
+
 ```
 
 My first assignment has two parts.
