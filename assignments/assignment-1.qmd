@@ -3,11 +3,9 @@ title: "Assignment 1"
 ---
 
 # Differences between R and Phyton
-
-```         
+      
 Although both R and Python are programming languages, they have differences and similarities. In this article, I will tell you about the differences between these two languages. I will exemplify the differences with code writing.
 
-```
 
 
 
