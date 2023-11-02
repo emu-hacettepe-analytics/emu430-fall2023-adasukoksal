@@ -18,6 +18,6 @@ In the Python programming language, performed as follows.
 
 My first assignment has two parts.
 
-## (a)
+## (a) R Programing
 
-## (b)
+## (b) Python
