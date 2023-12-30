@@ -18,7 +18,7 @@
     "href": "assignments/assignment-2.html",
     "title": "Assignment 2",
     "section": "",
-    "text": "Assignment 2\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\n Back to top"
+    "text": "Assignment 2\nlibrary(rvest) library(dplyr)\ndata_pages &lt;- c( “https://m.imdb.com/search/title/?title_type=feature&release_date=1800-12-31,2009-12-31&num_votes=2500,&country_of_origin=TR” “https://m.imdb.com/search/title/?title_type=feature&release_date=2010-01-01,2023-12-31&num_votes=2500,&country_of_origin=TR” )\nextract_data &lt;- function(url) { page &lt;- read_html(url)\ntitle_names &lt;- page %&gt;% html_nodes(’.ipc-title__text’) %&gt;% html_text() Year &lt;- page %&gt;% html_nodes(“.sc-43986a27-7.dBkaPT.dli-title-metadata”) %&gt;% html_text() Durations &lt;- page %&gt;% html_nodes(“.dli-title-metadata-item:nth-child(2)”) %&gt;% html_text() Ratings &lt;- page %&gt;% html_nodes(“.ratingGroup–imdb-rating”) %&gt;% html_text() Votes &lt;- page %&gt;% html_nodes(“.kRnqtn”) %&gt;% html_text()\ndata.frame( title_names = title_names, Year = Year, Durations = Durations, Ratings = Ratings, Votes = Votes ) }\ndata_list &lt;- lapply(data_pages, extract_data) df &lt;- do.call(rbind, data_list)\ndf\n\n\n\n\n Back to top"
   },
   {
     "objectID": "about.html",
