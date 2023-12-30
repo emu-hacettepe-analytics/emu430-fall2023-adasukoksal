@@ -4,6 +4,7 @@ title: "Assignment 2"
 
 # Assignment 2
 
+```{r}
 library(rvest)
 library(dplyr)
 
@@ -34,3 +35,5 @@ data_list <- lapply(data_pages, extract_data)
 df <- do.call(rbind, data_list)
 
 df
+```
+ghhjbjkk
