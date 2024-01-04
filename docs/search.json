@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "project.html",
+    "href": "project.html",
+    "title": "Our Course Project",
+    "section": "",
+    "text": "I’m honored to be a member of the [group name] project team.\nBelow, you’ll find a brief summary of our project. To access a detailed project description, please go to https://[your-project-url].\nSummary\n[provide a biref summary of your project]\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to My Analytics Lab",
+    "section": "",
+    "text": "Hello! My name is Ada Su KÖKSAL.\nThis is my personal webpage.\nPlease stay tuned to follow my works on data analytics, blog posts, and more.\nThis is our template.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "assignments/assignment-2.html",
+    "href": "assignments/assignment-2.html",
+    "title": "Assignment 2",
+    "section": "",
+    "text": "Assignment 2\nlibrary(rvest) library(dplyr)\ndata_pages &lt;- c( “https://m.imdb.com/search/title/?title_type=feature&release_date=1800-12-31,2009-12-31&num_votes=2500,&country_of_origin=TR” “https://m.imdb.com/search/title/?title_type=feature&release_date=2010-01-01,2023-12-31&num_votes=2500,&country_of_origin=TR” )\nextract_data &lt;- function(url) { page &lt;- read_html(url)\ntitle_names &lt;- page %&gt;% html_nodes(’.ipc-title__text’) %&gt;% html_text() Year &lt;- page %&gt;% html_nodes(“.sc-43986a27-7.dBkaPT.dli-title-metadata”) %&gt;% html_text() Durations &lt;- page %&gt;% html_nodes(“.dli-title-metadata-item:nth-child(2)”) %&gt;% html_text() Ratings &lt;- page %&gt;% html_nodes(“.ratingGroup–imdb-rating”) %&gt;% html_text() Votes &lt;- page %&gt;% html_nodes(“.kRnqtn”) %&gt;% html_text()\ndata.frame( title_names = title_names, Year = Year, Durations = Durations, Ratings = Ratings, Votes = Votes ) }\ndata_list &lt;- lapply(data_pages, extract_data) df &lt;- do.call(rbind, data_list)\ndf\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "B.S., Industrial Engineering, Hacettepe University, Turkey, 2020 - ongoing."
+  },
+  {
+    "objectID": "about.html#internships",
+    "href": "about.html#internships",
+    "title": "About Me",
+    "section": "Internships",
+    "text": "Internships\n\nTUSAŞ, production planning and control intern, 2023"
+  },
+  {
+    "objectID": "assignments/assignment-1.html",
+    "href": "assignments/assignment-1.html",
+    "title": "Assignment 1",
+    "section": "",
+    "text": "Although both R and Python are programming languages, they have differences and similarities. One of the common points of the two programming languages is that the print command is used in the same way in both. The print command can be used to write text in both R and Python. But when it comes to processing, R remains much simpler and more understandable than Python. Because we can write the operations directly, but in order to perform operations in Python, we first need to assign the numbers. In this article, I will tell you about the differences between these two languages. I will exemplify the differences with code writing. We can list the 3 differences between R and Python as follows:\n\nVariable Assignment\nConditional Assignments\nLoops\n\nTalking about the first difference, variable assignments, R and Python use different characters for some operations. In my opinion, R uses an easier and more understandable language than Python in this regard. In R, a value is assigned to a variable using the ‘&lt;-’ operator. In Python, the assignment is done using the = operator. Also in R we can add two numbers by only using ‘+’ although, in Python first we need to assign this numbers to a character.\nTalking about the second difference, conditional statement; In R, conditional statements are defined using the ‘if’ and ‘else’ keywords within curly braces ‘{}’. In Python, conditional statements are defined using the ‘if’, ’else. In this case, the indentation level determines the code blocks, and there is no need for curly braces in Python.\nIn the third difference, loops, the situation is as follows; In R, the for loop is used to iterate over a sequence of values. In Python, the for loop is also used, but the range function is commonly used for iteration.\n\n\nNow let’s look at coding the examples of the topics I just mentioned in R language. This way, what I explained will become more understandable.\nFor the first difference, variable assignments:\n\n1 + 1\n\n[1] 2\n\n\nFor the second difference, conditional statements:\n\nx &lt;- 5\nif (x &gt; 0) {\n  print(\"Positive\")\n} else {\n  print(\"Non-positive\")\n}\n\n[1] \"Positive\"\n\n\nFor the third difference, loops:\n\nfor (i in 1:5) {\n  print(i)\n}\n\n[1] 1\n[1] 2\n[1] 3\n[1] 4\n[1] 5\n\n\n\n\n\nNow it’s time to look at Python coding examples.\nFor the first difference, variable assignments:\n\nx = 5\ny = 3\nprint(x + y)\n\n8\n\n\nFor the second difference, conditional statements:\n\nx=5\nif x &gt; 0:\n    print(\"Positive\")\nelse:\n    print(\"Non-positive\")\n\nPositive\n\n\nFor the third difference, loops:\n\nfor i in range(1, 6):\n    print(i)\n\n1\n2\n3\n4\n5"
+  },
+  {
+    "objectID": "assignments/assignment-1.html#a-r-programing",
+    "href": "assignments/assignment-1.html#a-r-programing",
+    "title": "Assignment 1",
+    "section": "",
+    "text": "Now let’s look at coding the examples of the topics I just mentioned in R language. This way, what I explained will become more understandable.\nFor the first difference, variable assignments:\n\n1 + 1\n\n[1] 2\n\n\nFor the second difference, conditional statements:\n\nx &lt;- 5\nif (x &gt; 0) {\n  print(\"Positive\")\n} else {\n  print(\"Non-positive\")\n}\n\n[1] \"Positive\"\n\n\nFor the third difference, loops:\n\nfor (i in 1:5) {\n  print(i)\n}\n\n[1] 1\n[1] 2\n[1] 3\n[1] 4\n[1] 5"
+  },
+  {
+    "objectID": "assignments/assignment-1.html#b-python",
+    "href": "assignments/assignment-1.html#b-python",
+    "title": "Assignment 1",
+    "section": "",
+    "text": "Now it’s time to look at Python coding examples.\nFor the first difference, variable assignments:\n\nx = 5\ny = 3\nprint(x + y)\n\n8\n\n\nFor the second difference, conditional statements:\n\nx=5\nif x &gt; 0:\n    print(\"Positive\")\nelse:\n    print(\"Non-positive\")\n\nPositive\n\n\nFor the third difference, loops:\n\nfor i in range(1, 6):\n    print(i)\n\n1\n2\n3\n4\n5"
+  },
+  {
+    "objectID": "assignments.html",
+    "href": "assignments.html",
+    "title": "My Assignments",
+    "section": "",
+    "text": "On this page, I showcase the assignment I conducted for the Fall 2023 EMU 430 Data Analytics course.\nPlease use left menu to navigate through my assignments.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "My Blog",
+    "section": "",
+    "text": "This page is under construction.\n\n\n\n Back to top"
+  }
+]

@@ -3,3 +3,37 @@ title: "Assignment 2"
 ---
 
 # Assignment 2
+
+```{r}
+library(rvest)
+library(dplyr)
+
+data_pages <- c(
+  "https://m.imdb.com/search/title/?title_type=feature&release_date=1800-12-31,2009-12-31&num_votes=2500,&country_of_origin=TR"
+"https://m.imdb.com/search/title/?title_type=feature&release_date=2010-01-01,2023-12-31&num_votes=2500,&country_of_origin=TR"
+)
+
+extract_data <- function(url) {
+  page <- read_html(url)
+  
+  title_names <- page %>% html_nodes('.ipc-title__text') %>% html_text()
+  Year <- page %>% html_nodes(".sc-43986a27-7.dBkaPT.dli-title-metadata") %>% html_text()
+  Durations <- page %>% html_nodes(".dli-title-metadata-item:nth-child(2)") %>% html_text()
+  Ratings <- page %>% html_nodes(".ratingGroup--imdb-rating") %>% html_text()
+  Votes <- page %>% html_nodes(".kRnqtn") %>% html_text()
+  
+  data.frame(
+    title_names = title_names,
+    Year = Year,
+    Durations = Durations,
+    Ratings = Ratings,
+    Votes = Votes
+  )
+}
+
+data_list <- lapply(data_pages, extract_data)
+df <- do.call(rbind, data_list)
+
+df
+```
+ghhjbjkk
